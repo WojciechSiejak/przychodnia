@@ -19,7 +19,7 @@ class PatientController extends Controller
         return view('patients.list',compact('patients','footerYear','title'));
     }
 
-    public function show(UserRepository $userRepo,$id)
+    public function show(UserRepository $userRepo,$id) 
     {
       
         $patient = $userRepo->find($id);
